@@ -1,7 +1,10 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Features from './components/Features'
+import ReducedFeatures from './components/ReducedFeatures'
+import FlowHighlights from './components/FlowHighlights'
 import HowItWorks from './components/HowItWorks'
+import ImageGallery from './components/ImageGallery'
+import CaseStudies from './components/CaseStudies'
 import Showcase from './components/Showcase'
 import Pricing from './components/Pricing'
 import CTA from './components/CTA'
@@ -13,8 +16,11 @@ function App() {
       <FlowBg />
       <Navbar />
       <Hero />
-      <Features />
+      <ReducedFeatures />
+      <FlowHighlights />
       <HowItWorks />
+      <ImageGallery />
+      <CaseStudies />
       <Showcase />
       <Pricing />
       <CTA />
