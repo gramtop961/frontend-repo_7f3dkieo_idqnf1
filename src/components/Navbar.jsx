@@ -7,7 +7,7 @@ export default function Navbar() {
   const NavLink = ({ children, href = '#' }) => (
     <a
       href={href}
-      className="text-slate-300 hover:text-white transition-colors"
+      className="text-[#B0B0B0] hover:text-white transition-colors"
     >
       {children}
     </a>
@@ -16,12 +16,12 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-40">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mt-6 rounded-2xl border border-white/10 bg-slate-900/70 backdrop-blur supports-[backdrop-filter]:bg-slate-900/50">
+        <div className="mt-6 rounded-2xl border border-white/10 bg-[#181818]/80 backdrop-blur supports-[backdrop-filter]:bg-[#181818]/60">
           <div className="flex items-center justify-between px-6 py-4">
             <a href="#" className="flex items-center gap-2">
               <div className="relative">
-                <div className="absolute -inset-2 rounded-xl bg-blue-500/20 blur-lg" />
-                <div className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white shadow-lg">
+                <div className="absolute -inset-2 rounded-xl bg-[rgba(255,110,31,0.25)] blur-lg" />
+                <div className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-[#FF6E1F] to-[#FF771A] text-white shadow-lg">
                   <Package className="h-5 w-5" />
                 </div>
               </div>
@@ -36,10 +36,10 @@ export default function Navbar() {
             </nav>
 
             <div className="hidden md:flex items-center gap-3">
-              <a href="#demo" className="text-slate-300 hover:text-white">Book demo</a>
+              <a href="#demo" className="text-[#B0B0B0] hover:text-white">Book demo</a>
               <a
                 href="#get-started"
-                className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-2 text-white shadow-lg shadow-blue-600/20"
+                className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#FF6E1F] to-[#FF771A] px-4 py-2 text-white shadow-lg shadow-[rgba(255,110,31,0.28)]"
               >
                 <Sparkles className="h-4 w-4 transition-transform group-hover:scale-110" />
                 Get started
@@ -48,7 +48,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setOpen(v => !v)}
-              className="md:hidden rounded-lg border border-white/10 p-2 text-slate-200"
+              className="md:hidden rounded-lg border border-white/10 p-2 text-white/90"
               aria-label="Toggle menu"
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -57,13 +57,13 @@ export default function Navbar() {
 
           {open && (
             <div className="md:hidden border-t border-white/10 px-6 py-4 space-y-3">
-              <a href="#features" className="block text-slate-300">Features</a>
-              <a href="#how" className="block text-slate-300">How it works</a>
-              <a href="#showcase" className="block text-slate-300">Showcase</a>
-              <a href="#pricing" className="block text-slate-300">Pricing</a>
+              <a href="#features" className="block text-[#B0B0B0]">Features</a>
+              <a href="#how" className="block text-[#B0B0B0]">How it works</a>
+              <a href="#showcase" className="block text-[#B0B0B0]">Showcase</a>
+              <a href="#pricing" className="block text-[#B0B0B0]">Pricing</a>
               <div className="pt-2 flex items-center gap-3">
-                <a href="#demo" className="text-slate-300">Book demo</a>
-                <a href="#get-started" className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-3 py-2 text-sm text-white">Get started</a>
+                <a href="#demo" className="text-[#B0B0B0]">Book demo</a>
+                <a href="#get-started" className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#FF6E1F] to-[#FF771A] px-3 py-2 text-sm text-white">Get started</a>
               </div>
             </div>
           )}

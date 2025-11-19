@@ -12,7 +12,7 @@ export default function Showcase() {
   return (
     <section id="showcase" className="relative py-16">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div className="rounded-2xl border border-white/10 bg-[#222222] p-6">
           <div className="flex items-center gap-6 overflow-hidden">
             <motion.div
               className="flex items-center gap-10 min-w-full"
@@ -20,7 +20,7 @@ export default function Showcase() {
               transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
             >
               {[...logos, ...logos].map((src, i) => (
-                <img key={i} src={src} className="h-8 opacity-70" />
+                <img key={i} src={src} className="h-8 opacity-80" />
               ))}
             </motion.div>
           </div>
